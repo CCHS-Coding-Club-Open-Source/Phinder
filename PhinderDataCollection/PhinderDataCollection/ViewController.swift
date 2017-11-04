@@ -29,9 +29,9 @@ class ViewController: UIViewController {
         print(prefLangCode)
         
         
-//      print(Locale.isoLanguageCodes)
+//       print(Locale.isoLanguageCodes)
         
-//        let identifiers : NSArray = NSLocale.availableLocaleIdentifiers as NSArray
+//       let identifiers : NSArray = NSLocale.availableLocaleIdentifiers as NSArray
 //        let locale = NSLocale(localeIdentifier: "en_US")
 //        let list = NSMutableString()
 //        for identifier in identifiers {
