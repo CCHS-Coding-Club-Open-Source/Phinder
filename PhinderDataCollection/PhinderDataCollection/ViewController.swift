@@ -17,8 +17,6 @@ class ViewController: UIViewController {
         
         print(TimeZone.current.abbreviation()!)
         
-        print(TimeZone.abbreviationDictionary)
-        
         let date = Date()
         let calendar = Calendar.current
         let hour = calendar.component(.hour, from: date)

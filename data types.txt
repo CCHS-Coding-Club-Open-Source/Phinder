@@ -13,3 +13,5 @@ Acceleration (g) in X, Y, and Z
 Name of WiFi network
 
 Current local time
+
+Timezone
