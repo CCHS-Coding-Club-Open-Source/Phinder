@@ -2,3 +2,4 @@ Magnetic compass heading (degrees)
 Barometer (inHg)
 Teslameter (µT) in X, Y, and Z
 Acceleration (g) in X, Y, and Z
+Name of WiFi network
