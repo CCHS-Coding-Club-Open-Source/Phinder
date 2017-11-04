@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let hoursFromGMT = Double(TimeZone.current.secondsFromGMT()) / 3600.0
+//        let hoursFromGMT = Double(TimeZone.current.secondsFromGMT()) / 3600.0
         
-        print(TimeZone.current.abbreviation()!)
+        print("Timezone:", TimeZone.current.abbreviation()!)
         
         let date = Date()
         let calendar = Calendar.current
@@ -23,9 +23,23 @@ class ViewController: UIViewController {
         let minutes = calendar.component(.minute, from: date)
         
         
-        print(hoursFromGMT)
         print(date, "\n", calendar, "\n", hour, "\n", minutes)
         
+        let prefLangCode = Locale.preferredLanguages
+        print(prefLangCode)
+        print(Locale.isoLanguageCodes)
+        
+        
+        
+        let identifiers : NSArray = NSLocale.availableLocaleIdentifiers as NSArray
+        let locale = NSLocale(localeIdentifier: "en_US")
+        let list = NSMutableString()
+        for identifier in identifiers {
+            let name = locale.displayName(forKey: NSLocale.Key.identifier, value: identifier)!
+            list.append("\(identifier)\t\(name)\n")
+        }
+        
+        print(list)
         
         
         // Do any additional setup after loading the view, typically from a nib.
