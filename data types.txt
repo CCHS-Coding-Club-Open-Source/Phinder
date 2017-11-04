@@ -15,3 +15,5 @@ Name of WiFi network
 Current local time
 
 Timezone
+
+User's default language

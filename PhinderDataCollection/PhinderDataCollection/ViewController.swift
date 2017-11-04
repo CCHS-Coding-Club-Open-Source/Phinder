@@ -25,21 +25,20 @@ class ViewController: UIViewController {
         
         print(date, "\n", calendar, "\n", hour, "\n", minutes)
         
-        let prefLangCode = Locale.preferredLanguages
+        let prefLangCode = Locale.preferredLanguages[0]
         print(prefLangCode)
-        print(Locale.isoLanguageCodes)
         
         
+//      print(Locale.isoLanguageCodes)
         
-        let identifiers : NSArray = NSLocale.availableLocaleIdentifiers as NSArray
-        let locale = NSLocale(localeIdentifier: "en_US")
-        let list = NSMutableString()
-        for identifier in identifiers {
-            let name = locale.displayName(forKey: NSLocale.Key.identifier, value: identifier)!
-            list.append("\(identifier)\t\(name)\n")
-        }
-        
-        print(list)
+//        let identifiers : NSArray = NSLocale.availableLocaleIdentifiers as NSArray
+//        let locale = NSLocale(localeIdentifier: "en_US")
+//        let list = NSMutableString()
+//        for identifier in identifiers {
+//            let name = locale.displayName(forKey: NSLocale.Key.identifier, value: identifier)!
+//            list.append("\(identifier)\t\(name)\n")
+//        }
+//        print(list)
         
         
         // Do any additional setup after loading the view, typically from a nib.
