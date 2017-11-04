@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         let hoursFromGMT = Double(TimeZone.current.secondsFromGMT()) / 3600.0
         
-        print(TimeZone.current.secondsFromGMT())
+        print(TimeZone.current.abbreviation()!)
         
         print(TimeZone.abbreviationDictionary)
         
