@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-barPressure = input("Enter barometric pressure:\n")
-deviceTime = input("Enter device time:\n")
-heading = input("Enter device's compass heading")
-currentSpeed = input("Enter device's current speed\n")
+barPressure = float(input("Enter barometric pressure:\n"))
+time = input("Enter device time as 'min:sec'\n").split(':')
+heading = float(input("Enter device's compass heading:\n"))
+currentSpeed = float(input("Enter device's current speed\n"))
 
 
 print("Hello world!")
 
-print(barPressure, deviceTime, heading, currentSpeed)
+print(barPressure, time, heading, currentSpeed)
