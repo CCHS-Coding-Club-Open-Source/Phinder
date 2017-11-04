@@ -12,6 +12,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let hoursFromGMT = Double(TimeZone.current.secondsFromGMT()) / 3600.0
+        
+        print(TimeZone.current.secondsFromGMT())
+        
+        print(TimeZone.abbreviationDictionary)
+        
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        
+        
+        print(hoursFromGMT)
+        print(date, "\n", calendar, "\n", hour, "\n", minutes)
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
