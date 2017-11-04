@@ -35,7 +35,7 @@ print("Timezone Longitude (deg):", lng)
 
 
 # # Here we would look-up Wi-Fi SSID and save to file (not done programmatically for now because of query caps) # #
-
+# # We specify the min/max longitudes based on Timezone # #
 
 ssidFilePath = os.path.normpath(sys.path[0] + "/Wi-Fi Lookups/" + ssid + ".json")
 ssidFile = open(ssidFilePath)
