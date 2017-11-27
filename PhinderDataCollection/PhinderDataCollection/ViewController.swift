@@ -64,6 +64,27 @@ class ViewController: UIViewController {
         
         dataLabel.text = dataString
         
+        
+        
+        
+        
+        
+        let altimeter = CMAltimeter()
+        if CMAltimeter.isRelativeAltitudeAvailable() {
+            altimeter.startRelativeAltitudeUpdates(to: OperationQueue.main, withHandler: { data, error in
+                if !(error != nil) {
+                    print("Relative Altitude: \(data!.relativeAltitude)")
+                }
+            })
+        }
+        
+        
+        
+        
+        
+        
+        
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
